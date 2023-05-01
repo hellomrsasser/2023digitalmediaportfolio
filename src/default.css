@@ -1,0 +1,84 @@
+div#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+}
+
+div#header>h1 {
+  color: #21879e;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 2.4em;
+  letter-spacing: .2rem;
+}
+
+div#header>div#nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div#header>div#nav>a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: #bbb;
+}
+
+div#header>div#nav>a:hover {
+  color: #000;
+}
+
+div#content {
+  display: flex;
+  flex-direction: column;
+  background-color: #8adff2;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  left: 0;
+}
+
+div#content>h2,div#content>p {
+  font-family: Helvetica, sans-serif;
+  color: #0a6a80;
+  margin-left: 10%;
+  width: 80%;
+}
+
+div#content>h2 {
+  font-size: 2em;
+}
+
+div#content>p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+div#content>p>a {
+  text-decoration: none;
+}
+
+div#content>img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  max-width: 50%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+div#content>img:hover {
+  cursor: pointer;
+}
+
+div#content>p.caption {
+  font-size: 1em;
+  text-align: center;
+  align-self: center;
+  margin: 10px 0;
+  width: 40%;
+}
