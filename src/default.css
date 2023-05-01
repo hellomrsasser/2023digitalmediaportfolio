@@ -21,7 +21,7 @@ div#header>div#nav {
 }
 
 div#header>div#nav>a {
-  margin-right: 20px;
+  margin: 20px;
   text-decoration: none;
   font-family: Arial, sans-serif;
   color: #bbb;
