@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- Hello Mr. Sasser! -->
+<!-- I couldn't think of anything, so I tried to just recreate the example in the project sheet. -->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/default.css" />
+    <link rel="icon" href="./indesign/beachball.png" />
+    <title>Contact | Logan Witt-Bahls' Digital Media Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>LOGAN WITT-BAHLS' DIGITAL MEDIA PORTFOLIO</h1>
+      <div id="nav">
+        <a href="./index.html">Home</a>
+        <a href="./photoshop.html">Photoshop</a>
+        <a href="./illustrator.html">Illustrator</a>
+        <a href="./premiere.html">Premiere</a>
+        <a href="./indesign.html">InDesign</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <div id="content">
+      <h2>Contact Page</h2>
+      <p>Email: <a href="mailto:25LDW01@stu.cpsk12.org">School Email</a></p>
+      <p>Resume: <a href="https://docs.google.com/document/d/12jz0mr-97vpvKi27eQOFAy4D09r5Xhfwqqfcli5q0Ec/edit?usp=sharing">Google Doc</a></p>
+      <p>Thanks for checking out my Digital Media Portfolio website. Have a good <span id="grabtime"></span>!</p>
+    </div>
+    
+    <script type="text/javascript" src="./src/main.js"></script>
+    <script>
+      // not the best way to do it but it's faster than with a switch-range statement
+      document.querySelector("span#grabtime").innerText = ["night","morning","morning","morning","afternoon","afternoon","evening","night","night"][Math.floor((new Date()).getHours() / 3)];
+    </script>
+  </body>
+</html>
