@@ -6,18 +6,15 @@ updateSpacing();
 setInterval(updateSpacing, 250); // pulls content beneath header at regular intervals
 
 document.querySelectorAll("div#content>img:not([data-pdf-src])").forEach(i => i.addEventListener("click", function() { // turns imgs into hyperlinks to full-size image
-  let a = document.createElement("a");
+  let a = document.createElement("a"); // putting the <img> in an <a> tag messed up the styling
   a.href = i.src;
   a.target = "_blank";
-  a.click();
+  a.click(); // window.open() is sometimes blocked by default
 }));
 
 document.querySelectorAll("div#content>img[data-pdf-src]").forEach(i => i.addEventListener("click", function() {
-  let pdf = i.getAttribute("data-pdf-src");
-  console.log(pdf);
   let a = document.createElement("a");
-  a.href = pdf;
-  a.download = pdf.slice(pdf.lastIndexOf("/") + 1);
+  a.href = i.getAttribute("data-pdf-src");
   a.target = "_blank";
   a.click();
 }));
